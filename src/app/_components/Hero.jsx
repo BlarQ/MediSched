@@ -1,3 +1,4 @@
+import { Button } from '@/components/ui/button'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
@@ -5,35 +6,28 @@ import React from 'react'
 const Hero = () => {
     return (
         <section>
-            <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
+            <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-12 lg:py-16">
                 <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
-                    <div className="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full">
+                    <div className="relative h-64 overflow-hidden rounded-3xl sm:h-80 lg:order-last lg:h-full">
                         <Image
                             alt="Doctors"
                             src="/doctors.jpg"
-                            className="absolute inset-0 h-full w-full object-cover hover:scale-[1.02] transform transition-transform ease-in-out duration-300"
-                            width={500}
-                            height={500}
+                            className="absolute inset-0 h-full w-full object-cover hover:scale-[1.02] transform transition-transform ease-in-out duration-300 rounded-3xl"
+                            width={1000}
+                            height={1000}
                             loading='lazy'
                             effect='blur'
                         />
                     </div>
 
                     <div className="lg:py-24">
-                        <h2 className="text-3xl font-bold sm:text-4xl">Grow your audience</h2>
+                        <h2 className="text-3xl font-bold sm:text-4xl">Book <span className='text-brandBlue'>Appointments</span> seemlessly with trusted <span className='text-brandBlue'>Healthcare</span> providers.</h2>
 
                         <p className="mt-4 text-gray-600">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut qui hic atque tenetur quis
-                            eius quos ea neque sunt, accusantium soluta minus veniam tempora deserunt? Molestiae eius
-                            quidem quam repellat.
+                            Access a network of top-rated healthcare providers and manage your appointments with ease. Your health deserves the best care, just a few clicks away.
                         </p>
 
-                        <Link
-                            href="#"
-                            className="mt-8 inline-block rounded bg-indigo-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-indigo-700 focus:outline-none focus:ring focus:ring-yellow-400"
-                        >
-                            Get Started Today
-                        </Link>
+                        <Button className='mt-8 bg-brandBlue hover:bg-brandBlue'>Explore Now</Button>
                     </div>
                 </div>
             </div>
