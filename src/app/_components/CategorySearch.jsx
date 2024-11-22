@@ -11,11 +11,15 @@ const CategorySearch = () => {
         tracking-wide'>Search <span className='text-brandBlue'>Doctors</span></h2>
             <h3 className='text-gray-500 text-xl'>Search your Doctor and Book an Appointment</h3>
 
-            <div className="flex w-full max-w-sm items-center space-x-2">
-                <Input type="text" placeholder="Search..." />
-                <Button type="submit">
+            <div className="flex w-full mt-4 max-w-sm items-center space-x-2">
+                <Input className='outline-none' type="text" placeholder="Search..." />
+                <Button type="submit" className='bg-brandBlue hover:bg-brandBlue'>
                     <Search className='h-4 w-4'/>
                     Search</Button>
+            </div>
+
+            <div>
+                
             </div>
         </div>
     )
